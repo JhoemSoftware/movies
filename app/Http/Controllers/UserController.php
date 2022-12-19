@@ -22,7 +22,7 @@ class UserController extends Controller
             'aliasUserForm'    => ['required'],
             'emailUserForm'    => ['required'],
             'passwordUserForm' => ['required'],
-            'roleUserForm'     => ['required']
+            /* 'roleUserForm'     => ['required'] */
         ]);
 
         $user = new User;

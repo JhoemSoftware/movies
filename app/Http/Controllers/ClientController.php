@@ -19,8 +19,7 @@ class ClientController extends Controller
         $request->validate([
             'firstNameClientForm'            => ['required'],
             'lastNameClientForm'             => ['required'],
-            'identificationNumberClientForm' => ['required'],
-            'decriptionClientForm'           => ['required']
+            'identificationNumberClientForm' => ['required']
         ]);
 
         $client = new Client;

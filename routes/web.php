@@ -9,3 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('/movies', [MovieController::class, 'index'])->name('projects.index');
+
+Route::get('/dashboard', function(){
+    return view('admin.dashboard');
+});
