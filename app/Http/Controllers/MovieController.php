@@ -9,11 +9,12 @@ class MovieController extends Controller
 {
     public function index()
     {
-        return [
+        /* return [
             'Listado de Peliculas'
-        ];
+        ]; */
         /* return Movie::paginate(); */
-        /* return Movie::all(); */
+        $portafolio = Movie::get();
+        return view('pages.movies.index', ['portafolio' => $portafolio]);
     }
 
     public function store(Request $request)

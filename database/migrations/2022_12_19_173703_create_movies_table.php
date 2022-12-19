@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('movies', function (Blueprint $table) {
@@ -18,17 +13,12 @@ return new class extends Migration
             $table->string('title');
             $table->string('genre');
             $table->string('description');
-            $table->date('age');
+            $table->string('age');
             $table->integer('number_stock');
             $table->timestamps();
         });
     }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    
     public function down()
     {
         Schema::dropIfExists('movies');
