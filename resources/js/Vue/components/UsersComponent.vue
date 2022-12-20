@@ -5,10 +5,10 @@
     <table class="table table-info table-hover">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">identificación</th>
+          <th scope="col">nombres</th>
+          <th scope="col">usuario</th>
+          <th scope="col">email</th>
         </tr>
       </thead>
       <tbody>
@@ -17,17 +17,6 @@
           <td>Mark</td>
           <td>Otto</td>
           <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
         </tr>
       </tbody>
     </table>

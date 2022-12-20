@@ -293,3 +293,26 @@ cite .img-cite, .cite .img-cite {
 	color: #38c5c3;
 	text-transform: capitalize;
 }
+
+.table tr th {
+	text-transform: uppercase;
+}
+
+.posts .card {
+	border-radius: 1vmin;
+	width: 18rem;
+	padding: 1vmin;
+}
+
+.posts .card h3{
+	color: #38c5c3;
+	text-shadow: 1px .5px #000;
+}
+
+.infoCard {
+	background-color: #38c5c3;
+	border-radius: 2vmin;
+	color: #f7f9fc;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
