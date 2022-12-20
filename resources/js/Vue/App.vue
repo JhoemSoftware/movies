@@ -1,9 +1,38 @@
 <template>
-    <div>
-        Laravel 9 con Vue 3 and Vite JS <br>
-        Epa <br>
-        Porfin me funciono
-        <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vue_icon_130078.png" alt="">
-        <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/laravel_logo_icon_168331.png" alt="">
-    </div>
+  <div>
+    <header class="space-inter">
+      <div class="container container-flex space-between">
+        <h1>MoviesApp</h1>
+        <nav class="custom-wrapper" id="menu">
+          <div class="pure-menu"></div>
+          <ul class="container-flex list-unstyled">
+            <li>
+              <router-link to="/" class="text-uppercase">inicio</router-link>
+            </li>
+            <li>
+              <router-link to="/users" class="text-uppercase"
+                >usuarios</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/clients" class="text-uppercase"
+                >clientes</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/movies" class="text-uppercase"
+                >películas</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/rents" class="text-uppercase"
+                >rentas</router-link
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <router-view></router-view>
+  </div>
 </template>

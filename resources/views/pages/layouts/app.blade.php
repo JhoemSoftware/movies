@@ -12,49 +12,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="https://kit.fontawesome.com/93d7895fa4.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 	<div class="preload"></div>
-	<header class="space-inter">
-		<div class="container container-flex space-between">
-			<figure class="logo"><img src="img/logo.png" alt=""></figure>
-			<nav class="custom-wrapper" id="menu">
-				<div class="pure-menu"></div>
-				<ul class="container-flex list-unstyled">
-					<li><a href="index.html" class="text-uppercase">Inicio</a></li>
-					<li><a href="about.html" class="text-uppercase">About</a></li>
-					<li><a href="archive.html" class="text-uppercase">NOOO</a></li>
-					<li><a href="contact.html" class="text-uppercase">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
     @yield('content')
     <section class="footer">
 		<footer>
-			<div class="container">
-				<figure class="logo"><img src="img/logo.png" alt=""></figure>
-				<nav>
-					<ul class="container-flex space-center list-unstyled">
-						<li><a href="index.html" class="text-uppercase c-white">Inicio</a></li>
-						<li><a href="about.html" class="text-uppercase c-white">Acerca de</a></li>
-						<li><a href="archive.html" class="text-uppercase c-white">archive</a></li>
-						<li><a href="contact.html" class="text-uppercase c-white">contact</a></li>
-					</ul>
-				</nav>
-				<div class="divider-2"></div>
-				<p>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</p>
-				<div class="divider-2" style="width: 80%;"></div>
-				<p>© 2017 - Zendero. All Rights Reserved. Designed & Developed by <span class="c-white">Agencia De La Web</span></p>
-				<ul class="social-media-footer list-unstyled">
-					<li><a href="#" class="fb"></a></li>
-					<li><a href="#" class="tw"></a></li>
-					<li><a href="#" class="in"></a></li>
-					<li><a href="#" class="pn"></a></li>
-				</ul>
-			</div>
+			<p>Movies App • Prueba técnica Conecta Team • Jhon Alexander Marín</p>
 		</footer>
 	</section>
-	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	@vite('resources/js/app.js')
 </body>
 </html>
