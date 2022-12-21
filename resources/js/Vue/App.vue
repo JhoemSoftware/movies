@@ -2,9 +2,8 @@
   <div>
     <header class="space-inter">
       <div class="container container-flex space-between">
-        <h1>MoviesApp</h1>
+        <h1 class="logoPage"><span>APP</span>movies</h1>
         <nav class="custom-wrapper" id="menu">
-          <div class="pure-menu"></div>
           <ul class="container-flex list-unstyled">
             <li>
               <router-link to="/" class="text-uppercase">inicio</router-link>

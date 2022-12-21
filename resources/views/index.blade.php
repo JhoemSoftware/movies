@@ -1,4 +1,4 @@
-@extends('pages.layouts.app')
+@extends('app')
 @section('content')    
     <div id="app"></div>
 @endsection

@@ -283,6 +283,16 @@ cite .img-cite, .cite .img-cite {
 	right: 7px;
 }
 
+.logoPage {
+	color: #494949;
+	font-weight: bold;
+}
+
+.logoPage span{
+	color: #38c5c3;
+	font-size: 8vmin;
+}
+
 .table, .card {
 	margin: 5vmin auto;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -296,12 +306,14 @@ cite .img-cite, .cite .img-cite {
 
 .table tr th {
 	text-transform: uppercase;
+	background-color: #38c5c3;
 }
 
 .posts .card {
 	border-radius: 1vmin;
-	width: 18rem;
+	width: 35vmin;
 	padding: 1vmin;
+	height: fit-content;
 }
 
 .posts .card h3{
@@ -315,4 +327,16 @@ cite .img-cite, .cite .img-cite {
 	color: #f7f9fc;
 	font-weight: bold;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.space-inter {
+	padding: 2vmin 1.5vmin;
+}
+
+.btn-info i {
+	color: #f7f9fc;
+}
+
+#menu {
+	margin-bottom: 0;
 }
