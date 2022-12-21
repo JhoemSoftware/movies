@@ -333,7 +333,17 @@ cite .img-cite, .cite .img-cite {
 	padding: 2vmin 1.5vmin;
 }
 
-.btn-info i {
+.btn-info i, .btn-secondary i {
+	color: #f7f9fc;
+}
+
+.btn-success {
+	background-color: #00cf76 !important;
+	border: none !important;
+}
+
+.modal-header {
+	background-color: #38c5c3;
 	color: #f7f9fc;
 }
 

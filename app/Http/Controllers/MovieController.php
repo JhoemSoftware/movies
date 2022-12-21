@@ -20,19 +20,19 @@ class MovieController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'titleFormMovie'        => ['required'],
-            'genreFormMovie'        => ['required'],
-            'descriptionFormMovie'  => ['required'],
-            'ageFormMovie'          => ['required'],
-            'numberCopiesFormMovie' => ['required']
+            'title'        => ['required'],
+            'genre'        => ['required'],
+            'description'  => ['required'],
+            'age'          => ['required'],
+            'number_stock' => ['required']
         ]);
 
         $movie = new Movie;
-        $movie->title        = $request->input('titleFormMovie');
-        $movie->genre        = $request->input('genreFormMovie');
-        $movie->description  = $request->input('descriptionFormMovie');
-        $movie->age          = $request->input('ageFormMovie');
-        $movie->number_stock = $request->input('numberCopiesFormMovie');
+        $movie->title        = $request->input('title');
+        $movie->genre        = $request->input('genre');
+        $movie->description  = $request->input('description');
+        $movie->age          = $request->input('age');
+        $movie->number_stock = $request->input('number_stock');
         $movie->save();
         
         return $movie;
@@ -46,18 +46,18 @@ class MovieController extends Controller
     public function update(Request $request, Movie $movie)
     {
         $request->validate([
-            'titleFormMovie'        => ['required'],
-            'genreFormMovie'        => ['required'],
-            'descriptionFormMovie'  => ['required'],
-            'ageFormMovie'          => ['required'],
-            'numberCopiesFormMovie' => ['required']
+            'title'        => ['required'],
+            'genre'        => ['required'],
+            'description'  => ['required'],
+            'age'          => ['required'],
+            'number_stock' => ['required']
         ]);
 
-        $movie->title        = $request->input('titleFormMovie');
-        $movie->genre        = $request->input('genreFormMovie');
-        $movie->description  = $request->input('descriptionFormMovie');
-        $movie->age          = $request->input('ageFormMovie');
-        $movie->number_stock = $request->input('numberCopiesFormMovie');
+        $movie->title        = $request->input('title');
+        $movie->genre        = $request->input('genre');
+        $movie->description  = $request->input('description');
+        $movie->age          = $request->input('age');
+        $movie->number_stock = $request->input('number_stock');
         $movie->save();
         
         return $movie;

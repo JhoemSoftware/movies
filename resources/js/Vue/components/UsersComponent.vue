@@ -39,13 +39,16 @@
                           <input type="password" class="form-control" id="exampleInputPassword1">
                       </div>
                       <div class="mb-3">
-                          <input type="button" class="btn btn-info" value="Registrar">
+                        <button type="button" class="btn btn-info">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                          </button>
                       </div>
                   </form>
               </div>
               </div>
           </div>
         </div>
+
     <table class="table table-info table-hover">
       <thead>
         <tr>
@@ -62,7 +65,7 @@
           <td> {{ user.alias }} </td>
           <td> {{ user.email }} </td>
           <td>
-            <button type="button" class="btn btn-info">
+            <button type="button" class="btn btn-secondary">
               <i class="fa-solid fa-pen"></i>
             </button>
           </td>
@@ -93,7 +96,6 @@ export default {
     UsersLoad() {
       const page = "http://127.0.0.1:8000/api/users/";
       axios.get(page).then(({ data }) => {
-        console.log(data);
         this.result = data;
       });
     },
