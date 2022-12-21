@@ -18,18 +18,18 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nameUserForm'     => ['required'],
-            'aliasUserForm'    => ['required'],
-            'emailUserForm'    => ['required'],
-            'passwordUserForm' => ['required'],
+            'name'     => ['required'],
+            'alias'    => ['required'],
+            'email'    => ['required'],
+            'password' => ['required'],
             /* 'roleUserForm'     => ['required'] */
         ]);
 
         $user = new User;
-        $user->name     = $request->input('nameUserForm');
-        $user->alias    = $request->input('aliasUserForm');
-        $user->email    = $request->input('emailUserForm');
-        $user->password = $request->input('passwordUserForm');
+        $user->name     = $request->input('name');
+        $user->alias    = $request->input('alias');
+        $user->email    = $request->input('email');
+        $user->password = $request->input('password');
         /* $user->roleUser     = $request->input('roleUserForm'); */
         $user->save();
 
@@ -44,17 +44,16 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         $request->validate([
-            'nameUserForm'     => ['required'],
-            'aliasUserForm'    => ['required'],
-            'emailUserForm'    => ['required'],
-            'passwordUserForm' => ['required'],
-            'roleUserForm'     => ['required']
+            'name'     => ['required'],
+            'alias'    => ['required'],
+            'email'    => ['required'],
+            'password' => ['required'],
         ]);
 
-        $user->name     = $request->input('nameUserForm');
-        $user->alias    = $request->input('aliasUserForm');
-        $user->email    = $request->input('emailUserForm');
-        $user->password = $request->input('passwordUserForm');
+        $user->name     = $request->input('name');
+        $user->alias    = $request->input('alias');
+        $user->email    = $request->input('email');
+        $user->password = $request->input('password');
         /* $user->roleUser     = $request->input('roleUserForm'); */
         $user->save();
 

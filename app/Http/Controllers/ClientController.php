@@ -18,16 +18,16 @@ class ClientController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'firstNameClientForm'            => ['required'],
-            'lastNameClientForm'             => ['required'],
-            'identificationNumberClientForm' => ['required']
+            'first_name'            => ['required'],
+            'last_name'             => ['required'],
+            'identification_number' => ['required']
         ]);
 
         $client = new Client;
-        $client->first_name            = $request->input('firstNameClientForm');
-        $client->last_name             = $request->input('lastNameClientForm');
-        $client->identification_number = $request->input('identificationNumberClientForm');
-        $client->description           = $request->input('decriptionClientForm');
+        $client->first_name            = $request->input('first_name');
+        $client->last_name             = $request->input('last_name');
+        $client->identification_number = $request->input('identification_number');
+        $client->description           = $request->input('description');
         $client->save();
 
         return $client;
@@ -41,17 +41,16 @@ class ClientController extends Controller
     public function update(Request $request, Client $client)
     {
         $request->validate([
-            'firstNameClientForm'            => ['required'],
-            'lastNameClientForm'             => ['required'],
-            'identificationNumberClientForm' => ['required'],
-            'decriptionClientForm'           => ['required']
+            'first_name'            => ['required'],
+            'last_name'             => ['required'],
+            'identification_number' => ['required'],
         ]);
 
         $client = new Client;
-        $client->first_name            = $request->input('firstNameClientForm');
-        $client->last_name             = $request->input('lastNameClientForm');
-        $client->identification_number = $request->input('identificationNumberClientForm');
-        $client->description           = $request->input('decriptionClientForm');
+        $client->first_name            = $request->input('first_name');
+        $client->last_name             = $request->input('last_name');
+        $client->identification_number = $request->input('identification_number');
+        $client->description           = $request->input('description');
         $client->save();
 
         return $client;
