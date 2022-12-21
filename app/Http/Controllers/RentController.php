@@ -9,10 +9,10 @@ class RentController extends Controller
 {
     public function index()
     {
-        return [
+        /* return [
             'Renta de películas'
-        ];
-        /* return Rent::paginate(); */
+        ]; */
+        return Rent::all();
     }
 
     public function store(Request $request)

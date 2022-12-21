@@ -9,10 +9,10 @@ class UserController extends Controller
 {
     public function index()
     {
-        return [
+        /* return [
             "Hola Usuario"
-        ];
-        /* return User::all(); */
+        ]; */
+        return User::all();
     }
 
     public function store(Request $request)

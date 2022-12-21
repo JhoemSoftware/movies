@@ -9,9 +9,10 @@ class ClientController extends Controller
 {
     public function index()
     {
-        return [
+        /* return [
             'Clientes'
-        ];
+        ]; */
+        return Client::all();
     }
 
     public function store(Request $request)

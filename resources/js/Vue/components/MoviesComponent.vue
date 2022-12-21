@@ -3,6 +3,7 @@
     <section class="posts container">
       <h1 class="TitlePage">Nuestras Películas</h1>
       <div class="row justify-content-around">
+
         <div class="card">
           <div class="card-body">
             <h3 class="card-title">Agregar Película</h3>
@@ -22,32 +23,32 @@
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registro de Películas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <input type="button" class="btn btn-info" value="Registrar">
-                    </div>
-                </form>
-            </div>
-            </div>
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registro de Películas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                          <input type="button" class="btn btn-info" value="Registrar">
+                      </div>
+                  </form>
+              </div>
+              </div>
+          </div>
         </div>
-        </div>
-
+        
         <div class="card" v-for="movie in result" v-bind:key="movie.id">
           <img src="img/imgIndex.png" />
           <div class="card-body">
@@ -69,7 +70,7 @@
                 </button>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-secondary">
+                <button type="button" class="btn btn-danger">
                   <i class="fa-solid fa-trash"></i>
                 </button>
               </div>

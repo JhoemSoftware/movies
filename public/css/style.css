@@ -307,6 +307,7 @@ cite .img-cite, .cite .img-cite {
 .table tr th {
 	text-transform: uppercase;
 	background-color: #38c5c3;
+	color: #f7f9fc;
 }
 
 .posts .card {
@@ -317,8 +318,7 @@ cite .img-cite, .cite .img-cite {
 }
 
 .posts .card h3{
-	color: #38c5c3;
-	text-shadow: 1px .5px #000;
+	color: #494949;
 }
 
 .infoCard {
