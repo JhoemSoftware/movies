@@ -312,9 +312,9 @@ cite .img-cite, .cite .img-cite {
 
 .posts .card {
 	border-radius: 1vmin;
-	width: 35vmin;
-	padding: 1vmin;
+	width: fit-content;
 	height: fit-content;
+	padding: .3vmin;
 }
 
 .posts .card h3{

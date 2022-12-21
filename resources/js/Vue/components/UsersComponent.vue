@@ -6,18 +6,21 @@
             <!-- Card -->
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title">Agregar Usuario</h3>
-                    <div class="divider mb-3 mt-3"></div>
-                    <p class="card-text">
-                    <button
-                        type="button"
-                        class="btn btn-success"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                    >
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-6 align-self-center">
+                            <h3>Agregar Usuario</h3>
+                        </div>
+                        <div class="col-3 align-self-center">
+                            <button
+                                type="button"
+                                class="btn btn-success"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                            >
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -122,7 +125,7 @@
                             </button>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger">
+                            <button type="button" class="btn btn-danger" @click="deleted(user)">
                                 <i class="fa-solid fa-trash"></i>
                             </button>
                         </td>
@@ -175,6 +178,35 @@ export default {
                         swal("No se pudo Agregar 🤔", data, "error");
                     });
         },
+        deleted(info) {
+            console.log(info);
+            swal({
+                title: `¿Seguro deseas eliminar el usuario ${info.alias} ?`,
+                text: "Se realizas esta operación no se podrá reversar",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    this.UsersDelete(info.id);
+                    swal("El registro ha sido eliminado", { icon: "success" });
+                } else {
+                    swal("Haz cancelado la operación");
+                }
+            });
+
+        },
+        UsersDelete(user){
+            console.log(user);
+            const url = `${this.page}${user}`;
+            console.log(url);
+            axios.delete(url)
+                .then(()=>{
+                    this.UsersLoad();
+                })
+                .catch( ({data}) => console.log(data) )
+        }
     },
 };
 </script>
