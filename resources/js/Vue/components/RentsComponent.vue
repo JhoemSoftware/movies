@@ -134,11 +134,11 @@
                         </td>
                     </tr> -->
                     <tr>
-                        <td>4541212</td>
-                        <td>Defiance</td>
-                        <td>2022/12/21</td>
-                        <td>2022/12/25</td>
-                        <td>Sin observaciones</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>
                             <button type="button" class="btn btn-secondary">
                                 <i class="fa-solid fa-pen"></i>
